@@ -1,0 +1,50 @@
+<p>
+    In computer science and discrete mathematics,
+    an <a href="http://en.wikipedia.org/wiki/Inversion_(discrete_mathematics)">inversion</a>
+    is a pair of places of a sequence where the elements on these places are out of their natural order.
+    So if we use ascending order for numbers,
+    then a inversion is when bigger number appear before lower number in a sequence.
+</p>
+
+<p>
+    Let's look at example. sequence = (1, 2, 5, 3, 4, 7, 6) and we can see here three inversion:<br>
+    - 5 and 3;
+    - 5 and 4;
+    - 7 and 6.
+</p>
+
+<p>
+    You are given a sequence of unique numbers and you should count inversion in this sequence.
+</p>
+
+<p>
+    <strong>Input: </strong> A sequence as a tuple of integers.
+</p>
+
+<p>
+    <strong>Output: </strong> The inversion number as an integer.
+</p>
+
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+    <pre class="brush: python">
+count_inversion((1, 2, 5, 3, 4, 7, 6)) == 3
+count_inversion((0, 1, 2, 3)) == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    In this mission you will work with nested loops, of course if you don't use advanced algorithms.
+</p>
+
+<p>
+    <strong>Precondition:</strong>
+    2 &lt; len(sequence) &le; 100<br>
+    len(sequence) == len(set(sequence))<br>
+    all(-100 &lt; x &lt; 100 for x in sequence)
+</p>

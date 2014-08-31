@@ -1,0 +1,40 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        To iterate indexes in an array use "<a href="https://docs.python.org/2/library/functions.html#range">range</a>".
+<pre>
+for i in range(len(array)):
+    ...
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I need some help to proceed with the mission
+    </div>
+    <div class="answer">
+        The second loop (if you are using the simplest method) should be started "after" first loop index.
+<pre>
+for i in range(len(array)):
+    for j in range(i + 1, len(array)):
+        ...
+    </pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am gone half way through. Need help!
+    </div>
+    <div class="answer">
+        Now just compare elements and count them.
+<pre>
+if array[i] > array[j]:
+    count += 1
+    </pre>
+    </div>
+</div>
+
+</body>

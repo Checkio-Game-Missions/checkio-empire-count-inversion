@@ -26,7 +26,8 @@ count_inversion((0, 1, 2, 3)) == 0
 ```
 **How it is used:**
 
-In this mission you will experience the wonder of nested loops, that is of course supposing you don't use advanced algorithms or black magic.
+In this mission you will experience the wonder of nested loops, 
+that is of course supposing you don't use advanced algorithms or black magic.
 
 
 **Precondition:**

@@ -1,2 +1,2 @@
 All units should be numbered and the order is very important.
-But how to measure irregularity?
+But how do we deal with and measure irregularities?

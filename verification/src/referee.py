@@ -1,5 +1,5 @@
 from checkio_referee import RefereeBase
-from checkio_referee import covercodes, representations
+from checkio_referee import covercodes, representations, ENV_NAME
 
 
 import settings_env
@@ -11,13 +11,12 @@ class Referee(RefereeBase):
     ENVIRONMENTS = settings_env.ENVIRONMENTS
 
     DEFAULT_FUNCTION_NAME = "count_inversion"
+    FUNCTION_NAMES = {
+        ENV_NAME.JS_NODE: "countInversion"
+    }
     ENV_COVERCODE = {
-        "python_2": covercodes.py_tuple,
-        "python_3": covercodes.py_tuple,
-        "javascript": None
+        ENV_NAME.PYTHON: covercodes.py_tuple,
     }
     CALLED_REPRESENTATIONS = {
-        "python_2": representations.py_tuple_representation,
-        "python_3": representations.py_tuple_representation,
-        "javascript": None
+        ENV_NAME.PYTHON: representations.py_tuple_representation,
     }

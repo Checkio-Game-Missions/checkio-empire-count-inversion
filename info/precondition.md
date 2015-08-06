@@ -1,7 +1,5 @@
 **Precondition:**
 
-```python
-2 < len(sequence) < 200
-len(sequence) == len(set(sequence))
-all(-100 < x < 100 for x in sequence)
-```
+`2 < |sequence| < 200`
+
+`All elements of a sequence are unique.`
